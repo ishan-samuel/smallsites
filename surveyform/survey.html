@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ishan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Survry Form</title>
+    </head>
+    <body>
+        
+        <h1 id="title">Library Survey Form</h1>
+        <p id="description">This is an annual survey taken by the Library department.</p>
+
+        <form id="survey-form">
+  
+            <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your Name" required />
+  
+            <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required />
+
+            <label id="number-label" for="roll">Roll Number</label>
+                <input type="number" name="roll" id="number" min="1" max="69" placeholder="Roll" required />
+
+            <label for="class">Class</label>
+            <select name="class" id="dropdown" required>
+                <option disabled selected value>Select Class</option>
+                <option value="9th">IXth</option>
+                <option value="10th">Xth</option>
+                <option value="11th">XIth</option>
+                <option value="12th">XIIth</option>
+            </select>
+
+            <label for="issued">Have you issued a book in the past year?</label>
+                <input name="isuued" value="yes" type="radio" checked />Yes</label>
+                <input name="isuued" value="no" type="radio" />No</label>
+
+            <label for="type">Types of books issued?</label>
+                <input name="type" value="book-bank" type="checkbox" />Book Bank</label>
+                <input name="type" value="reference" type="checkbox" />Reference</label>
+                <input name="type" value="fiction" type="checkbox" />Fiction</label>
+
+            <label for="suggestions">Any suggestions?</label>
+                <textarea name="suggestions"></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+
+        </form>
+    </body>
+</html>
