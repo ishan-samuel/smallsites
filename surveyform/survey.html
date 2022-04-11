@@ -9,7 +9,7 @@
     </head>
     <body>
         
-        <header id="head">
+        <header ="head">
             <h1 id="title">Library Survey Form</h1>
             <p id="description">This is an annual survey taken by the Library department.</p>
         </header>
@@ -35,18 +35,18 @@
             </select>
 
             <label for="issued">Have you issued a book in the past year?</label>
-                <input name="isuued" value="yes" type="radio" checked />Yes</label>
-                <input name="isuued" value="no" type="radio" />No</label>
+                <input name="isuued" value="yes" type="radio" class="except" checked />Yes</label>
+                <input name="isuued" value="no" type="radio" class="except" />No</label>
 
             <label for="type">Types of books issued?</label>
-                <input name="type" value="book-bank" type="checkbox" />Book Bank</label>
-                <input name="type" value="reference" type="checkbox" />Reference</label>
-                <input name="type" value="fiction" type="checkbox" />Fiction</label>
+                <input name="type" value="book-bank" type="checkbox" class="except" />Book Bank</label>
+                <input name="type" value="reference" type="checkbox" class="except" />Reference</label>
+                <input name="type" value="fiction" type="checkbox" class="except" />Fiction</label>
 
             <label for="suggestions">Any suggestions?</label>
                 <textarea name="suggestions"></textarea>
 
-            <button type="submit" id="submit" class="submit-button">Submit</button>
+            <button type="submit" id="submit">Submit</button>
 
         </form>
 
